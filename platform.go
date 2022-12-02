@@ -160,6 +160,7 @@ var (
 
 	Platforms_1_15 = addDrop(Platforms_1_14, []Platform{
 		{"android", "arm64", false},
+		{"linux", "riscv64", true},
 	}, []Platform{
 		// drop i386 macos
 		{"darwin", "386", false},
@@ -178,7 +179,11 @@ var (
 	// no new platforms in 1.18
 	Platforms_1_18 = Platforms_1_17
 
-	PlatformsLatest = Platforms_1_18
+	Platforms_1_19 = addDrop(Platforms_1_18, []Platform{
+		{"linux", "loong64", true},
+	}, nil)
+
+	PlatformsLatest = Platforms_1_19
 )
 
 // SupportedPlatforms returns the full list of supported platforms for

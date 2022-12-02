@@ -43,6 +43,8 @@ Number of parallel builds: 4
 -->    netbsd/amd64: github.com/mitchellh/gox
 -->      netbsd/arm: github.com/mitchellh/gox
 -->       plan9/386: github.com/mitchellh/gox
+-->   linux/riscv64: github.com/mitchellh/gox
+-->   linux/loong64: github.com/mitchellh/gox
 ```
 
 Or, if you want to build a package and sub-packages:
